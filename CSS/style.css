@@ -1,0 +1,190 @@
+/* @font-face {
+    font-family: horror;
+    src: url(./Sectar.otf);
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* h1{
+    color: #6d0c76;
+    font-family: horror;
+    /* background-color: rgb(23, 36, 182);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize; */
+/* }
+p{
+    color: blue;
+}
+#new{
+    color: aqua;
+}
+.lnct{
+    color: blueviolet;
+} */
+/* #box{
+    height: 200px;
+    width: 200px;
+    background: radial-gradient(red,blue);
+} */
+/* #outer{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(145, 50, 234); */
+/*    background-image: url(./backgroundimage.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+ /* #box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(250, 146, 134);
+    margin: 50px 50px;
+    padding: 20px;
+ } */
+/* button{
+    margin: 100px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 10px;
+} */
+/* #box{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border: 5px solid white;
+    border-radius: 25px;
+} */
+ /* #homepage{
+    height: 1000px;
+    width: 100%;
+    background-color: lightblue;
+ } */
+ /* #side{
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    background-color: blueviolet;
+ } */
+ /* #main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ /* #box1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+ } */
+ /* #box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+ }
+ #box3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+ } */
+/* #box1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+ } */
+ /* #parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: auto; -> for scroll */
+/*    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+ } 
+ #child1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid white;
+    
+ }
+ #child2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 2px solid white;
+ }
+ #child3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 2px solid white;
+ } */
+
+       /* day - 16  */
+
+/* #box16{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    transition: all ease 0.5s;
+}
+img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+} */
+/* #box16:hover img{
+    
+    rotate: 10deg;
+} */
+
+        /* day  - 17 */
+
+/* h2{
+    font-size: 100px;
+    color: transparent;
+    /* background-image: url(https://media.licdn.com/dms/image/v2/D5612AQExjWOS223uBQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1711718025595?e=2147483647&v=beta&t=h1c6C9sim3QW93aFOljJymZkUDnIirKWAdg86MrWv5g);
+    background-size: cover; */
+    /* background-clip: text;
+    -webkit-text-stroke: 1px red;
+} */ 
