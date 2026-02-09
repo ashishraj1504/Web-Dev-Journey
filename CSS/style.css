@@ -212,7 +212,7 @@ img{
     grid-column: 1/5;
 } */
 
-main{
+/* main{
     height: 100%;
     width: 100%;
     background-color: black;
@@ -238,4 +238,17 @@ section{
 footer{
     background-color: rgb(187, 187, 170);
     grid-area: footer;
+} */
+
+        /* day  -  19 */
+
+h1{
+    /* font-size: 15vmax; */
+    /* font-size: 15vmin; */
+    font-size: 15vw;
+}
+#box{
+    height: 20vh;
+    width: 20vw;
+    background-color: crimson;
 }
