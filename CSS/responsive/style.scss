@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+// .red{
+//     height: 50vh;
+//     width: 50vw;
+//     background-color: red;
+// }
+html{
+    font-size: clamp(14px, 1vw, 18px);
+}
+h1{
+    font-size: 5rem; // depend on root(html)
+}
+// section{
+//     font-size: 30px;
+// }
+// h1{
+//     font-size: 4em; //depend on least ancestor 
+// }
