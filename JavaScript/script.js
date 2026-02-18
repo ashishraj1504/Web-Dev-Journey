@@ -29,3 +29,31 @@
     // var s = a; // s mai a ka reference gaya hai copy nhi huwa hai
     // reference - array object function - direct value can't copy
     // primitives - number boolean strings null undefined NaN - direct value can copy
+
+        // day  -  30
+
+// arithmetic operator
+    // + - * / % **
+    // 2 ** 3 = 8 basically power
+
+// assignment operators
+    // = += -= *= /= %=
+
+// comparison operator
+    // == === != !== > < >= <=
+    // == (not strict) never use this | === (strict compare) use this
+    // != (not strict) never use this | !== (strict compare) use this
+
+// logical op
+    // && || !(not)
+    
+//ternary op
+    //condition ? dothis : dothat
+
+// type checking op
+    //1. typeof     2. instanceof
+
+// optional chancing
+    // ?. (safe access to nested values)
+    // let obj = {};
+    // obj?.name?.first;
