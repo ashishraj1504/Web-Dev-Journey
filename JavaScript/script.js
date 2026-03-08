@@ -57,3 +57,23 @@
     // ?. (safe access to nested values)
     // let obj = {};
     // obj?.name?.first;
+
+        // day  -  32
+
+let a = 1;
+if(a>10){
+    console.log("hello");
+} else{
+    console.log("bye bye");
+}
+// 0 "" false NaN null undefined document.all
+// kuch bhi dikhe -> true
+if(0){
+    console.log("hey");
+} else{
+    console.log("working");
+}
+
+for(let i=1;i<5;i++){
+    console.log(i);
+}
