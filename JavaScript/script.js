@@ -96,3 +96,12 @@
 
 // }
 // if(i===3) console.log("account locked");
+
+        // arrays
+
+// Useful array methods
+
+// push() → add at end
+// pop() → remove from end
+// shift() → remove from start
+// unshift() → add at start
