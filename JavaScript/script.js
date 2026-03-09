@@ -60,20 +60,39 @@
 
         // day  -  32
 
-let a = 1;
-if(a>10){
-    console.log("hello");
-} else{
-    console.log("bye bye");
-}
-// 0 "" false NaN null undefined document.all
-// kuch bhi dikhe -> true
-if(0){
-    console.log("hey");
-} else{
-    console.log("working");
-}
+// let a = 1;
+// if(a>10){
+//     console.log("hello");
+// } else{
+//     console.log("bye bye");
+// }
+// // 0 "" false NaN null undefined document.all
+// // kuch bhi dikhe -> true
+// if(0){
+//     console.log("hey");
+// } else{
+//     console.log("working");
+// }
 
-for(let i=1;i<5;i++){
-    console.log(i);
-}
+// for(let i=1;i<5;i++){
+//     console.log(i);
+// }
+
+        // day  -  33
+
+// jab bhi prompt se kuch daalo ge wo hamesha string dega agar number mai chaiye to 
+// parseInt();
+// Number();
+// +prompt("number: ");
+
+// let password = "ashish";
+// let i=0;
+// for(i=0;i<3;i++){
+//     let pass = prompt("enter password: ");
+//     if(pass === password){
+//         console.log(pass);
+//         break;
+//     }
+
+// }
+// if(i===3) console.log("account locked");
