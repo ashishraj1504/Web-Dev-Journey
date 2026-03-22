@@ -77,24 +77,43 @@
 
 //  setInterval - controlled loop
 
-var btn = document.querySelector('button')
-var h1 = document.querySelector('h1')
-var inner = document.querySelector('.inner')
-var grow = 0
-btn.addEventListener('click',function(){
+// var btn = document.querySelector('button')
+// var h1 = document.querySelector('h1')
+// var inner = document.querySelector('.inner')
+// var grow = 0
+// btn.addEventListener('click',function(){
 
-        btn.style.pointerEvents = 'none';
-        var num = 30 + Math.floor(Math.random()*50)
-        var int = setInterval(function(){
-                grow++
-                h1.innerHTML = grow+'%'
-                inner.style.width = grow+'%'
-        },num)
-        setTimeout(function(){
-                clearInterval(int)
-                btn.innerHTML = 'Downloaded'
-                btn.style.opacity = 0.5
-                console.log('downloaded in',num/10,'sec');
+//         btn.style.pointerEvents = 'none';
+//         var num = 30 + Math.floor(Math.random()*50)
+//         var int = setInterval(function(){
+//                 grow++
+//                 h1.innerHTML = grow+'%'
+//                 inner.style.width = grow+'%'
+//         },num)
+//         setTimeout(function(){
+//                 clearInterval(int)
+//                 btn.innerHTML = 'Downloaded'
+//                 btn.style.opacity = 0.5
+//                 console.log('downloaded in',num/10,'sec');
                 
-        },num * 100)
+//         },num * 100)
+// })
+
+        // day - 46
+
+var img = document.querySelector('img')
+var love = document.querySelector('#love')
+
+img.addEventListener('dblclick',function(){
+        love.style.opacity = 1
+        love.style.transform = 'translate(-50%,-50%) scale(1) rotate(0deg)'
+        setTimeout(() => {
+                love.style.transform = 'translate(-50%,-350%) scale(1) rotate(60deg)'
+        }, 800);
+        setTimeout(() => {
+                love.style.opacity = 0
+        }, 1000);
+        setTimeout(() => {
+                love.style.transform = 'translate(-50%,-50%) scale(0) rotate(-60deg)'
+        }, 1200);
 })

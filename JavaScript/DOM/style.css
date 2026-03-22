@@ -75,15 +75,13 @@ button:active{
 
         /* day - 45 */
 
-main{
+/* main{
     height: 100%;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    gap: 10px;
 }
 
 .card{
@@ -118,7 +116,7 @@ span{
     padding: 10px;
 }
 h1{
-    /* color: white; */
+    
     font-size: 40px;
     padding: 10px;
 }
@@ -133,4 +131,50 @@ button{
 }
 button:active{
     scale: 0.95;
+} */
+
+        /* day - 46 */
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 230px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    
+}
+.card h2{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.card #love{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(https://img.freepik.com/premium-vector/veliky-novgorod-russia-oktober-11-2021-instagram-gradient-background_522680-261.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: cover;
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    color: transparent;
+    font-size: 50px;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.57,1.18,.51,1.27) 0.2s;
 }
