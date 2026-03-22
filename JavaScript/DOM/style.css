@@ -48,7 +48,7 @@ button:active{
 
         /* day - 44 */
 
-main{
+/* main{
     height: 100%;
     width: 100%;
     background-color: black;
@@ -68,6 +68,68 @@ button{
     cursor: pointer;
     position: relative;
     z-index: 2;
+}
+button:active{
+    scale: 0.95;
+} */
+
+        /* day - 45 */
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.card{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+span{
+    color: blue;
+}
+.outer{
+    height: 20px;
+    background-color: rgb(197, 189, 190);
+    border-radius: 10px;
+}
+.inner{
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    border-radius: 10px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+h1{
+    /* color: white; */
+    font-size: 40px;
+    padding: 10px;
+}
+button{
+    padding: 10px 20px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
 }
 button:active{
     scale: 0.95;

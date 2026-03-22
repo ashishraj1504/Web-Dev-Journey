@@ -41,23 +41,60 @@
 
         // day - 44
 
-var btn = document.querySelector('button')
-var main = document.querySelector('main')
+// var btn = document.querySelector('button')
+// var main = document.querySelector('main')
 
+// btn.addEventListener('click',function(){
+//         var div = document.createElement('div')
+//         var x = Math.floor(Math.random()*90)
+//         var y = Math.floor(Math.random()*90)
+//         var r = Math.floor(Math.random()*100)
+//         var c1 = Math.floor(Math.random()*256)
+//         var c2 = Math.floor(Math.random()*256)
+//         var c3 = Math.floor(Math.random()*256)
+//         div.style.height = '70px'
+//         div.style.width = '70px'
+//         div.style.position = 'absolute'
+//         div.style.backgroundColor = `rgb(${c1},${c2},${c3})`
+//         div.style.left = x+'%'
+//         div.style.top = y+'%'
+//         div.style.rotate = r+'deg'
+//         main.appendChild(div)
+// })
+
+        // day - 45
+
+// setTimeout - delay
+
+// var btn = document.querySelector('button')
+// var h1 = document.querySelector('h1')
+// btn.addEventListener('click',function(){
+//         h1.innerHTML = 'changing user'
+//         setTimeout(function(){
+//                 h1.innerHTML = 'i am velzod'
+//         },2000)
+// })
+
+//  setInterval - controlled loop
+
+var btn = document.querySelector('button')
+var h1 = document.querySelector('h1')
+var inner = document.querySelector('.inner')
+var grow = 0
 btn.addEventListener('click',function(){
-        var div = document.createElement('div')
-        var x = Math.floor(Math.random()*90)
-        var y = Math.floor(Math.random()*90)
-        var r = Math.floor(Math.random()*100)
-        var c1 = Math.floor(Math.random()*256)
-        var c2 = Math.floor(Math.random()*256)
-        var c3 = Math.floor(Math.random()*256)
-        div.style.height = '70px'
-        div.style.width = '70px'
-        div.style.position = 'absolute'
-        div.style.backgroundColor = `rgb(${c1},${c2},${c3})`
-        div.style.left = x+'%'
-        div.style.top = y+'%'
-        div.style.rotate = r+'deg'
-        main.appendChild(div)
+
+        btn.style.pointerEvents = 'none';
+        var num = 30 + Math.floor(Math.random()*50)
+        var int = setInterval(function(){
+                grow++
+                h1.innerHTML = grow+'%'
+                inner.style.width = grow+'%'
+        },num)
+        setTimeout(function(){
+                clearInterval(int)
+                btn.innerHTML = 'Downloaded'
+                btn.style.opacity = 0.5
+                console.log('downloaded in',num/10,'sec');
+                
+        },num * 100)
 })
