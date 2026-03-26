@@ -135,7 +135,7 @@ button:active{
 
         /* day - 46 */
 
-main{
+/* main{
     height: 100%;
     width: 100%;
     background-color: black;
@@ -171,10 +171,50 @@ main{
     background-image: url(https://img.freepik.com/premium-vector/veliky-novgorod-russia-oktober-11-2021-instagram-gradient-background_522680-261.jpg?semt=ais_hybrid&w=740&q=80);
     background-size: cover;
     background-clip: text;
-    /* -webkit-background-clip: text; */
+    
     color: transparent;
     font-size: 50px;
     opacity: 0;
     transform: translate(-50%,-50%) scale(0) rotate(-60deg);
     transition: all cubic-bezier(.57,1.18,.51,1.27) 0.2s;
+} */
+
+        /* day - 47 */
+
+main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.card h2{
+    font-size: 30px;
+}
+.card h3{
+    font-size: 15px;
+    margin-top: 5px;
+    color: red;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 15px;
 }
