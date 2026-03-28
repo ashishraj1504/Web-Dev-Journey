@@ -120,41 +120,56 @@
 
                 // day - 47
 
-const users = [
-  {
-    username: "ashish_dev",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    profession: "Frontend Developer",
-    description: "Passionate about building interactive UI using React and JavaScript."
-  },
-  {
-    username: "anyone_codes",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    profession: "Backend Developer",
-    description: "Loves working with APIs, databases, and server-side logic."
-  },
-  {
-    username: "random_ui",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    profession: "UI/UX Designer",
-    description: "Designs clean and user-friendly interfaces with great user experience."
-  },
-  {
-    username: "rahul_ai",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-    profession: "AI Engineer",
-    description: "Works on machine learning models and intelligent systems."
-  }
-];
+// const users = [
+//   {
+//     username: "ashish_dev",
+//     image: "https://randomuser.me/api/portraits/men/1.jpg",
+//     profession: "Frontend Developer",
+//     description: "Passionate about building interactive UI using React and JavaScript."
+//   },
+//   {
+//     username: "anyone_codes",
+//     image: "https://randomuser.me/api/portraits/women/2.jpg",
+//     profession: "Backend Developer",
+//     description: "Loves working with APIs, databases, and server-side logic."
+//   },
+//   {
+//     username: "random_ui",
+//     image: "https://randomuser.me/api/portraits/women/3.jpg",
+//     profession: "UI/UX Designer",
+//     description: "Designs clean and user-friendly interfaces with great user experience."
+//   },
+//   {
+//     username: "rahul_ai",
+//     image: "https://randomuser.me/api/portraits/men/4.jpg",
+//     profession: "AI Engineer",
+//     description: "Works on machine learning models and intelligent systems."
+//   }
+// ];
 
-var sum = ''
-users.forEach(function(ele){
-        sum += `<div class="card">
-                <img src="${ele.image}" alt="">
-                <h2>${ele.username}</h2>
-                <h3>${ele.profession}</h3>
-                <p>${ele.description}</p>
-        </div>`
+// var sum = ''
+// users.forEach(function(ele){
+//         sum += `<div class="card">
+//                 <img src="${ele.image}" alt="">
+//                 <h2>${ele.username}</h2>
+//                 <h3>${ele.profession}</h3>
+//                 <p>${ele.description}</p>
+//         </div>`
+// })
+// var main = document.querySelector('main')
+// main.innerHTML = sum
+
+                // day - 49
+
+var allbtn = document.querySelectorAll('button')
+
+allbtn.forEach(function(ele){
+        ele.addEventListener('click',function(){
+                if(ele.innerHTML == 'Add Friend'){
+                        ele.innerHTML = 'Remove Friend'
+                }
+                else{
+                        ele.innerHTML = 'Add Friend'
+                }
+        })
 })
-var main = document.querySelector('main')
-main.innerHTML = sum

@@ -181,7 +181,7 @@ button:active{
 
         /* day - 47 */
 
-main{
+/* main{
     background-color: black;
     height: 100%;
     width: 100%;
@@ -217,4 +217,34 @@ main{
 }
 .card p{
     font-size: 15px;
+} */
+
+        /* day - 49 */
+
+#main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.box{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+
+}
+.box h1{
+    font-size: 20px;
+}
+.box button{
+    background-color: blue;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
