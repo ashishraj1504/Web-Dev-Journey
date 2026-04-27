@@ -221,7 +221,7 @@ button:active{
 
         /* day - 49 */
 
-#main{
+/* #main{
     background-color: black;
     height: 100%;
     width: 100%;
@@ -247,4 +247,123 @@ button:active{
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+} */
+
+        /* day - 50 */
+
+/* body{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
 }
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom,rgb(40, 39, 39),black);
+    padding: 10px;
+
+}
+section{
+    height: 100%;
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+}
+.allreels{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.allreels::-webkit-scrollbar{
+    display: none;
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: lightblue;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.reel .bottom{
+    padding: 30px 20px;
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.475));
+    position: absolute;
+    bottom: 0;
+    
+}
+.bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.user>h4{
+    font-size: 17px;
+    font-weight: 500;
+}
+.user button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 2px 5px;
+    font-size: 13px;
+}
+.user img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bottom>h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+.right{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 13px;
+    text-align: center;
+    width: 30px;
+}
+.right h4{
+    cursor: pointer;
+}
+.right i{
+    font-size: 20px;
+    font-weight: 500;
+}
+.right h6{
+    font-size: 15px;
+    font-weight: 500;
+}
+.right>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.love{
+     color: red;   
+} */
