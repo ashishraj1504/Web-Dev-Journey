@@ -176,157 +176,184 @@
 
                 // day - 50
 
-// const reels = [
-//   {
-//     username: "travelwithriya",
-//     likeCount: 12450,
-//     isLiked: true,
-//     commentCount: 342,
-//     caption: "Sunsets just hit different in Goa 🌅",
-//     video: "https://www.pexels.com/download/video/17961476/",
-//     userProfile: "https://i.pravatar.cc/150?img=1",
-//     shareCount: 120,
-//     is_follow: true
-//   },
-//   {
-//     username: "fit_rahul",
-//     likeCount: 8930,
-//     isLiked: false,
-//     commentCount: 210,
-//     caption: "No excuses. Just results 💪",
-//     video: "https://www.pexels.com/download/video/34992110/",
-//     userProfile: "https://i.pravatar.cc/150?img=2",
-//     shareCount: 75,
-//     is_follow: false
-//   },
-//   {
-//     username: "foodie_nisha",
-//     likeCount: 15670,
-//     isLiked: true,
-//     commentCount: 489,
-//     caption: "Street food diaries in Delhi 😍",
-//     video: "https://www.pexels.com/download/video/35322357/",
-//     userProfile: "https://i.pravatar.cc/150?img=3",
-//     shareCount: 210,
-//     is_follow: true
-//   },
-//   {
-//     username: "techwitharjun",
-//     likeCount: 5420,
-//     isLiked: false,
-//     commentCount: 98,
-//     caption: "Top 3 apps you must try in 2026 📱",
-//     video: "https://www.pexels.com/download/video/19891724/",
-//     userProfile: "https://i.pravatar.cc/150?img=4",
-//     shareCount: 60,
-//     is_follow: false
-//   },
-//   {
-//     username: "dance_with_me",
-//     likeCount: 22340,
-//     isLiked: true,
-//     commentCount: 760,
-//     caption: "Trying this trending dance 🔥",
-//     video: "https://media.istockphoto.com/id/2242583008/video/colorful-parakeets-sitting-inside-cage-with-perch-and-toy.mp4?s=mp4-640x640-is&k=20&c=H9L_85djztbEPH9tcB13un8u2zj0f5CbxgIHK-taDoE=",
-//     userProfile: "https://i.pravatar.cc/150?img=5",
-//     shareCount: 340,
-//     is_follow: true
-//   },
-//   {
-//     username: "naturelover_amit",
-//     likeCount: 6780,
-//     isLiked: false,
-//     commentCount: 150,
-//     caption: "Peaceful morning vibes 🌿",
-//     video: "https://www.pexels.com/download/video/17961476/",
-//     userProfile: "https://i.pravatar.cc/150?img=6",
-//     shareCount: 90,
-//     is_follow: false
-//   },
-//   {
-//     username: "makeupbykavya",
-//     likeCount: 18760,
-//     isLiked: true,
-//     commentCount: 520,
-//     caption: "Soft glam look tutorial 💄",
-//     video: "https://media.istockphoto.com/id/2242583008/video/colorful-parakeets-sitting-inside-cage-with-perch-and-toy.mp4?s=mp4-640x640-is&k=20&c=H9L_85djztbEPH9tcB13un8u2zj0f5CbxgIHK-taDoE=",
-//     userProfile: "https://i.pravatar.cc/150?img=7",
-//     shareCount: 280,
-//     is_follow: true
-//   },
-//   {
-//     username: "comedy_king",
-//     likeCount: 25400,
-//     isLiked: true,
-//     commentCount: 890,
-//     caption: "Tag your best friend 😂",
-//     video: "https://www.pexels.com/download/video/19891724/",
-//     userProfile: "https://i.pravatar.cc/150?img=8",
-//     shareCount: 500,
-//     is_follow: false
-//   },
-//   {
-//     username: "carcraze_vik",
-//     likeCount: 11230,
-//     isLiked: false,
-//     commentCount: 305,
-//     caption: "Dream car spotted 🚗🔥",
-//     video: "https://www.pexels.com/download/video/34992110/",
-//     userProfile: "https://i.pravatar.cc/150?img=9",
-//     shareCount: 150,
-//     is_follow: true
-//   },
-//   {
-//     username: "bookworm_sara",
-//     likeCount: 7340,
-//     isLiked: true,
-//     commentCount: 180,
-//     caption: "This book changed my perspective 📚",
-//     video: "https://www.pexels.com/download/video/17961476/",
-//     userProfile: "https://i.pravatar.cc/150?img=10",
-//     shareCount: 95,
-//     is_follow: false
-//   }
-// ];
-// var sum = ''
-// reels.forEach(function (elem) {
-//         sum += `<div class="reel">
-//                 <video autoplay loop muted src="${elem.video || 'https://media.istockphoto.com/id/2212565932/video/woman-strolling-with-dog-on-tranquil-beach-at-sunset.mp4?s=mp4-640x640-is&k=20&c=9esc-nqMuqwQjVb16hUH0vJkF_aNG1I8K94jaoTJ080='}"></video>
-                
-//                 <div class="bottom">
-//                     <div class="user">
-//                         <img src="${elem.userProfile}" alt="">
-//                         <h4>${elem.username}</h4>
-//                         <button>${elem.is_follow ? 'Following' : 'Follow'}</button>
-//                     </div>
-//                     <h3>${elem.caption}</h3>
-//                 </div>
+const reels = [
+  {
+    username: "travelwithriya",
+    likeCount: 12450,
+    isLiked: true,
+    commentCount: 342,
+    caption: "Sunsets just hit different in Goa 🌅",
+    video: "https://www.pexels.com/download/video/17961476/",
+    userProfile: "https://i.pravatar.cc/150?img=1",
+    shareCount: 120,
+    is_follow: true
+  },
+  {
+    username: "fit_rahul",
+    likeCount: 8930,
+    isLiked: false,
+    commentCount: 210,
+    caption: "No excuses. Just results 💪",
+    video: "https://www.pexels.com/download/video/34992110/",
+    userProfile: "https://i.pravatar.cc/150?img=2",
+    shareCount: 75,
+    is_follow: false
+  },
+  {
+    username: "foodie_nisha",
+    likeCount: 15670,
+    isLiked: true,
+    commentCount: 489,
+    caption: "Street food diaries in Delhi 😍",
+    video: "https://www.pexels.com/download/video/35322357/",
+    userProfile: "https://i.pravatar.cc/150?img=3",
+    shareCount: 210,
+    is_follow: true
+  },
+  {
+    username: "techwitharjun",
+    likeCount: 5420,
+    isLiked: false,
+    commentCount: 98,
+    caption: "Top 3 apps you must try in 2026 📱",
+    video: "https://www.pexels.com/download/video/19891724/",
+    userProfile: "https://i.pravatar.cc/150?img=4",
+    shareCount: 60,
+    is_follow: false
+  },
+  {
+    username: "dance_with_me",
+    likeCount: 22340,
+    isLiked: true,
+    commentCount: 760,
+    caption: "Trying this trending dance 🔥",
+    video: "https://media.istockphoto.com/id/2242583008/video/colorful-parakeets-sitting-inside-cage-with-perch-and-toy.mp4?s=mp4-640x640-is&k=20&c=H9L_85djztbEPH9tcB13un8u2zj0f5CbxgIHK-taDoE=",
+    userProfile: "https://i.pravatar.cc/150?img=5",
+    shareCount: 340,
+    is_follow: true
+  },
+  {
+    username: "naturelover_amit",
+    likeCount: 6780,
+    isLiked: false,
+    commentCount: 150,
+    caption: "Peaceful morning vibes 🌿",
+    video: "https://www.pexels.com/download/video/17961476/",
+    userProfile: "https://i.pravatar.cc/150?img=6",
+    shareCount: 90,
+    is_follow: false
+  },
+  {
+    username: "makeupbykavya",
+    likeCount: 18760,
+    isLiked: true,
+    commentCount: 520,
+    caption: "Soft glam look tutorial 💄",
+    video: "https://media.istockphoto.com/id/2242583008/video/colorful-parakeets-sitting-inside-cage-with-perch-and-toy.mp4?s=mp4-640x640-is&k=20&c=H9L_85djztbEPH9tcB13un8u2zj0f5CbxgIHK-taDoE=",
+    userProfile: "https://i.pravatar.cc/150?img=7",
+    shareCount: 280,
+    is_follow: true
+  },
+  {
+    username: "comedy_king",
+    likeCount: 25400,
+    isLiked: true,
+    commentCount: 890,
+    caption: "Tag your best friend 😂",
+    video: "https://www.pexels.com/download/video/19891724/",
+    userProfile: "https://i.pravatar.cc/150?img=8",
+    shareCount: 500,
+    is_follow: false
+  },
+  {
+    username: "carcraze_vik",
+    likeCount: 11230,
+    isLiked: false,
+    commentCount: 305,
+    caption: "Dream car spotted 🚗🔥",
+    video: "https://www.pexels.com/download/video/34992110/",
+    userProfile: "https://i.pravatar.cc/150?img=9",
+    shareCount: 150,
+    is_follow: true
+  },
+  {
+    username: "bookworm_sara",
+    likeCount: 7340,
+    isLiked: true,
+    commentCount: 180,
+    caption: "This book changed my perspective 📚",
+    video: "https://www.pexels.com/download/video/17961476/",
+    userProfile: "https://i.pravatar.cc/150?img=10",
+    shareCount: 95,
+    is_follow: false
+  }
+];
 
-//                 <div class="right">
-//                     <div class="like">
-//                         <h4 class="likeIcon">
-//                             <i class="${elem.isLiked ? 'ri-heart-3-fill love' : 'ri-heart-3-line'}"></i>
-//                         </h4>
-//                         <h6>${elem.likeCount}</h6>
-//                     </div>
+var allreel = document.querySelector('.allreels')
 
-//                     <div class="comment">
-//                         <h4 class="commentIcon"><i class="ri-chat-3-line"></i></h4>
-//                         <h6>${elem.commentCount}</h6>
-//                     </div>
+function addData(){
+        var sum = ''
+        reels.forEach(function (elem,idx) {
+                sum += `<div class="reel">
+                        <video autoplay loop muted src="${elem.video || 'https://media.istockphoto.com/id/2212565932/video/woman-strolling-with-dog-on-tranquil-beach-at-sunset.mp4?s=mp4-640x640-is&k=20&c=9esc-nqMuqwQjVb16hUH0vJkF_aNG1I8K94jaoTJ080='}"></video>
+                        
+                        <div class="bottom">
+                        <div class="user">
+                                <img src="${elem.userProfile}" alt="">
+                                <h4>${elem.username}</h4>
+                                <button id=${idx} class="follow" >${elem.is_follow ? 'Following' : 'Follow'}</button>
+                        </div>
+                        <h3>${elem.caption}</h3>
+                        </div>
 
-//                     <div class="share">
-//                         <h4 class="shareIcon"><i class="ri-send-ins-line"></i></h4>
-//                         <h6>${elem.shareCount}</h6>
-//                     </div>
+                        <div class="right">
+                        <div id=${idx} class="like">
+                                <h4 class="likeIcon">
+                                <i class="${elem.isLiked ? 'ri-heart-3-fill love' : 'ri-heart-3-line'}"></i>
+                                </h4>
+                                <h6>${elem.likeCount}</h6>
+                        </div>
 
-//                     <div class="menu">
-//                         <h4 class="menuIcon"><i class="ri-more-2-fill"></i></h4>
-//                     </div>
-//                 </div>
-//             </div>`
-// })
+                        <div class="comment">
+                                <h4 class="commentIcon"><i class="ri-chat-3-line"></i></h4>
+                                <h6>${elem.commentCount}</h6>
+                        </div>
 
-// var allreel = document.querySelector('.allreels')
+                        <div class="share">
+                                <h4 class="shareIcon"><i class="ri-send-ins-line"></i></h4>
+                                <h6>${elem.shareCount}</h6>
+                        </div>
 
-// allreel.innerHTML = sum
+                        <div class="menu">
+                                <h4 class="menuIcon"><i class="ri-more-2-fill"></i></h4>
+                        </div>
+                        </div>
+                </div>`
+        })
+        allreel.innerHTML = sum
+}
+addData()
+
+allreel.addEventListener('click',function(dets){
+        if(dets.target.className == 'like'){
+            if(!reels[dets.target.id].isLiked){
+                reels[dets.target.id].likeCount++;
+                reels[dets.target.id].isLiked = true
+            }
+            else{
+                reels[dets.target.id].likeCount--;
+                reels[dets.target.id].isLiked = false
+            }
+        }
+        if(dets.target.className == 'follow'){
+            if(!reels[dets.target.id].is_follow){
+                reels[dets.target.id].is_follow = true
+            }
+            else{
+                reels[dets.target.id].is_follow = false
+            }
+        }
+    
+    addData();
+
+})
