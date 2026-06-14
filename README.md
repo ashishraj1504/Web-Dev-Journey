@@ -33,18 +33,31 @@ Introduction to SCSS (Sassy CSS)
 Variables, mixins, includes
 Writing reusable and maintainable styles
 
-🧠 **JavaScript (Basics)** <br>
+**JavaScript (Basics)** <br>
 Data types and variables
 Operators and expressions
 Conditional statements and loops
 Functions (parameters, return values)
 Arrays and objects
 
-🌳 **DOM (Document Object Model)** <br>
-Selecting elements
-Changing HTML content
-Changing CSS styles
-Event listeners
+**DOM (Document Object Model)** <br>
+Selecting elements, Changing HTML content, Changing CSS styles, Event listeners, Event delegation, Dynamic DOM creation, State-based UI updates, Template literals, Rendering data from arrays and objects, User interactions and UI manipulation
+
+**JavaScript Timing Functions**
+
+setTimeout(), setInterval(), clearInterval(), Progress simulations, Time-based animations
+
+🎯 **Event Handling**
+
+click, dblclick, mouseover, mouseout, keydown, keyup, input
+
+🚀 **Projects & Mini Applications**
+
+Random RGB Color Generator, Dynamic Random Element Generator, Fake Download Progress Bar, Double Click Like Animation, Friend Request Toggle System, Data-Driven Reels UI, Interactive Hover Effects, Spotlight Effect using CSS Variables, Matrix Text Scramble Animation, Animated Gradient Card, CSS Anchor Positioning Demo
+
+💡 **Concepts Explored**
+
+Data → UI → Interaction, Conditional Rendering, State Management Fundamentals, Dynamic Styling, Modern CSS Effects, Interactive User Experiences, Performance-Aware Animations, Component-Based Thinking, Responsive Design Principles
 
 🛠️ **Tools & Technologies** <br>
 HTML
