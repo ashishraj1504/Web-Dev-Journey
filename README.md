@@ -33,17 +33,17 @@ Introduction to SCSS (Sassy CSS)
 Variables, mixins, includes
 Writing reusable and maintainable styles
 
-**JavaScript (Basics)** <br>
+🧠 **JavaScript (Basics)** <br>
 Data types and variables
 Operators and expressions
 Conditional statements and loops
 Functions (parameters, return values)
 Arrays and objects
 
-**DOM (Document Object Model)** <br>
+🌳 **DOM (Document Object Model)** <br>
 Selecting elements, Changing HTML content, Changing CSS styles, Event listeners, Event delegation, Dynamic DOM creation, State-based UI updates, Template literals, Rendering data from arrays and objects, User interactions and UI manipulation
 
-**JavaScript Timing Functions**
+⏱️ **JavaScript Timing Functions**
 
 setTimeout(), setInterval(), clearInterval(), Progress simulations, Time-based animations
 
