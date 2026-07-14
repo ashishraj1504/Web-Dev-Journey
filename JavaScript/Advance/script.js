@@ -16,7 +16,7 @@
 //apply -> WAHI KARTA HAI JO CALL KARTA HAI AND arguments mein pahli value this ki and doosri value array hoti hai
 // blind -> wahi karta hai jo call karta hai and aapko naya fnc deta hai
 
-    //callback -> ek func jo turant nhi chalega ye chalega jab aapka koi kaam complete hoga
+//callback -> ek func jo turant nhi chalega ye chalega jab aapka koi kaam complete hoga
 
 // setTimeout(function(){
 //     console.log("hey");
@@ -34,3 +34,52 @@
 // UserAddress("provide address", function(Details){
 //     console.log(Details);
 // })
+
+//     day - 61
+
+// ------ promises ------
+
+// const prm = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve();
+//   }, 3000);
+// });
+
+// prm
+//   .then(() => {
+//     console.log("complete");
+//   })
+//   .catch(() => {
+//     console.log("rejected");
+//   });
+
+// -------- async await --------
+
+// works on promises
+
+// async function abc () {
+//     let raw = await fetch(`https://randomuser.me/api/`);
+//     let data = await raw.json();
+//     console.log(data);
+// }
+// abc();
+
+
+// function getnum() {
+//     return new Promise((reslove, reject)=>{
+//         setTimeout(() => {
+//             let num = Math.floor(Math.random()*10);
+//             if(num>=5){
+//                 reslove(true);
+//             }
+//             else{
+//                 reject(false);
+//             }
+//         }, 3000);
+//     });
+// }
+// async function check() {
+//     let v = await getnum();
+//     console.log(v);
+// }
+// check();
