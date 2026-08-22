@@ -83,3 +83,25 @@
 //     console.log(v);
 // }
 // check();
+
+//     day - 62
+
+// syntax error -> written code mai error
+// runtime error -> no error at time of writting code 
+// logical error -> diff work instead of some work
+
+// try {
+//     let a = 12;
+//     console.log(a.name.first);
+// } catch (err) {
+//     console.log(err);
+// } finally {
+//     console.log("helloo");
+// }
+
+// try {
+//     let a = 12;
+//     console.log(a.name.first);
+// } catch (err) {
+//     console.log(new Error("something went wrong"));
+// }
