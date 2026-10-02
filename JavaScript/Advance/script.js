@@ -128,36 +128,40 @@
 // }
 // getWeather("london");
 
-const users = [
-    "a.gmail.com",
-    "b.gmail.com",
-    "c.gmail.com"
-];
-function sendEmail(email) {
-  return new Promise((resolve, reject) => {
-    let time = Math.floor(Math.random() * 5);
-    setTimeout(() => {
-      let prob = Math.floor(Math.random() * 10);
-      if (prob <= 5) resolve("Email sent");
-      else reject("email failed");
-    }, time * 1000);
-  });
-}
+// const users = [
+//     "a.gmail.com",
+//     "b.gmail.com",
+//     "c.gmail.com"
+// ];
+// function sendEmail(email) {
+//   return new Promise((resolve, reject) => {
+//     let time = Math.floor(Math.random() * 5);
+//     setTimeout(() => {
+//       let prob = Math.floor(Math.random() * 10);
+//       if (prob <= 5) resolve("Email sent");
+//       else reject("email failed");
+//     }, time * 1000);
+//   });
+// }
 
-async function sendEmails(email) {
-  let allRepo = email.map(function (email) {
-    return sendEmail(email)
-      .then(function (data) {
-        return data;
-      })
-      .catch(function (err) {
-        return err;
-      });
-  });
-  let ans = await Promise.all(allRepo);
+// async function sendEmails(email) {
+//   let allRepo = email.map(function (email) {
+//     return sendEmail(email)
+//       .then(function (data) {
+//         return data;
+//       })
+//       .catch(function (err) {
+//         return err;
+//       });
+//   });
+//   let ans = await Promise.all(allRepo);
 
-  ans.forEach(function (status) {
-    console.log(status);
-  });
-}
-sendEmails(users);
+//   ans.forEach(function (status) {
+//     console.log(status);
+//   });
+// }
+// sendEmails(users);
+
+
+//     day - 64   (debaouncing and throttling)
+
