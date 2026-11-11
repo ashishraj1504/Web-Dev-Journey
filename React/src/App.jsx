@@ -1,7 +1,11 @@
 // import React from 'react'
 // import Card from './components/Card'
-import Navbar from './components/Navbar'
+// import { useState } from 'react';
+// import Navbar from './components/Navbar'
 const App = () => {
+  // let a = 0
+  // const [num, setNum] = useState(0)
+
   return (
     <div>
       {/* <h1 className='text-3l font-bold text-red-400'>Hello from App H1</h1>
@@ -17,7 +21,19 @@ const App = () => {
 
       {/*--------------------------------------------------*/}
 
-      <Navbar title="Sheryians" color='green' links={['Home', 'Services', 'Course', 'Contact']} />
+      {/* <Navbar title="Sheryians" color='green' links={['Home', 'Services', 'Course', 'Contact']} /> */}
+
+      {/* ------------------------------------ */}
+
+      {/* <h1>{num}</h1>
+      <button onClick={()=>{
+        setNum(num+1)
+      }}className='bg-pink-600 mx-2 rounded'>Increase</button>
+      <button onClick={()=>{
+        setNum(num-1)
+      }}className='bg-pink-600 rounded'>Decrease</button> */}
+
+      
     </div>
   )
 }
