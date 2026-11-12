@@ -1,5 +1,5 @@
 @import "tailwindcss";
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,8 +7,8 @@
 html,body{
   height: 100%;
   width: 100%;
-}
-form{
+} */
+/* form{
   padding: 15px;
   background-color: #333;
   display: flex;
@@ -17,4 +17,4 @@ form{
 input,button{
   padding: 5px 10px;
   background-color: rgb(22, 20, 20);
-}
+} */
