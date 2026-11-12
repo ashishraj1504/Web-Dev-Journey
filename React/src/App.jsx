@@ -1,10 +1,23 @@
 // import React from 'react'
 // import Card from './components/Card'
-// import { useState } from 'react';
+import { useState } from 'react';
 // import Navbar from './components/Navbar'
 const App = () => {
   // let a = 0
   // const [num, setNum] = useState(0)
+
+  const [name, setName] = useState('')
+  const [allUsers, setallUsers] = useState([])
+
+  const submitHandler = (e)=> {
+    e.preventDefault()
+    const oldAllUsers = [...allUsers]
+    oldAllUsers.push(name)
+
+    console.log(oldAllUsers);
+    setallUsers(oldAllUsers)
+    setName('')
+  }
 
   return (
     <div>
@@ -33,7 +46,18 @@ const App = () => {
         setNum(num-1)
       }}className='bg-pink-600 rounded'>Decrease</button> */}
 
-      
+      {/* ------form handling & 2 way binding------------ */}
+
+      <form onSubmit={(e)=>{
+          submitHandler(e)
+        }}>
+        <input type="text" placeholder="Enter name" required value={name} onChange={(e)=>{
+            setName(e.target.value)
+          }}/>
+        <button>Submit</button>
+      </form>
+
+
     </div>
   )
 }
