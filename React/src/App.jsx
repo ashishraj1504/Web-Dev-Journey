@@ -2,6 +2,7 @@
 // import Card from './components/Card'
 import { useState } from 'react';
 // import Navbar from './components/Navbar'
+import axios from 'axios'
 const App = () => {
   // let a = 0
   // const [num, setNum] = useState(0)
@@ -19,37 +20,49 @@ const App = () => {
   //   setName('')
   // }
 
-  const [userName, setuserName] = useState('')
-  const [userUrl, setuserUrl] = useState('')
-  const [userRole, setuserRole] = useState('')
-  const [userDesc, setuserDesc] = useState('')
+  // --------------------------------------
 
-  const localData = JSON.parse(localStorage.getItem('all-users')) || []
+  // const [userName, setuserName] = useState('')
+  // const [userUrl, setuserUrl] = useState('')
+  // const [userRole, setuserRole] = useState('')
+  // const [userDesc, setuserDesc] = useState('')
 
-  const [allUsers, setallUsers] = useState(localData)
+  // const localData = JSON.parse(localStorage.getItem('all-users')) || []
 
-  const submitHandler = (e)=> {
-    e.preventDefault()
+  // const [allUsers, setallUsers] = useState(localData)
+
+  // const submitHandler = (e)=> {
+  //   e.preventDefault()
     
-    const oldUsers = [...allUsers]
-    oldUsers.push({userName,userUrl,userRole,userDesc})
-    console.log(oldUsers);
+  //   const oldUsers = [...allUsers]
+  //   oldUsers.push({userName,userUrl,userRole,userDesc})
+  //   console.log(oldUsers);
     
-    setallUsers(oldUsers)
-    localStorage.setItem('all-users',JSON.stringify(oldUsers))
+  //   setallUsers(oldUsers)
+  //   localStorage.setItem('all-users',JSON.stringify(oldUsers))
 
-    setuserName('')
-    setuserUrl('')
-    setuserRole('')
-    setuserDesc('')
-  }
+  //   setuserName('')
+  //   setuserUrl('')
+  //   setuserRole('')
+  //   setuserDesc('')
+  // }
 
-  const deleteHandler = (idx)=>{
-    const copyUsers = [...allUsers]
-    copyUsers.splice(idx,1)
-    setallUsers(copyUsers)
-    localStorage.setItem('all-users',JSON.stringify(copyUsers))
-    console.log("ele delete");
+  // const deleteHandler = (idx)=>{
+  //   const copyUsers = [...allUsers]
+  //   copyUsers.splice(idx,1)
+  //   setallUsers(copyUsers)
+  //   localStorage.setItem('all-users',JSON.stringify(copyUsers))
+  //   console.log("ele delete");
+    
+  // }
+
+  // -----------------------------------
+
+  const [allData, setallData] = useState([])
+
+  async function getData(){
+    const promise = await axios.get('https://jsonplaceholder.typicode.com/users')
+    setallData(promise.data);
     
   }
 
@@ -93,7 +106,7 @@ const App = () => {
 
       {/* ---------- Delete & local Storage -------------- */}
 
-      <div className='h-screen bg-black text-white'>
+      {/* <div className='h-screen bg-black text-white'>
         <form onSubmit={(e)=>
           submitHandler(e)
         } className='flex flex-wrap justify-center p-2'>
@@ -126,9 +139,16 @@ const App = () => {
             </div>
           })}
         </div>
+      </div> */}
+
+      {/* ----------- API Handling (Axios) -------------- */}
+
+      <div>
+        <button onClick={getData}>Get Data</button>
+        {allData.map(function(elem,idx){
+          return <h1 key={idx}>{elem.name} {idx+1}</h1>
+        })}
       </div>
-
-
 
     </div>
   )
