@@ -24,7 +24,9 @@ const App = () => {
   const [userRole, setuserRole] = useState('')
   const [userDesc, setuserDesc] = useState('')
 
-  const [allUsers, setallUsers] = useState([])
+  const localData = JSON.parse(localStorage.getItem('all-users')) || []
+
+  const [allUsers, setallUsers] = useState(localData)
 
   const submitHandler = (e)=> {
     e.preventDefault()
@@ -34,6 +36,7 @@ const App = () => {
     console.log(oldUsers);
     
     setallUsers(oldUsers)
+    localStorage.setItem('all-users',JSON.stringify(oldUsers))
 
     setuserName('')
     setuserUrl('')
@@ -45,6 +48,7 @@ const App = () => {
     const copyUsers = [...allUsers]
     copyUsers.splice(idx,1)
     setallUsers(copyUsers)
+    localStorage.setItem('all-users',JSON.stringify(copyUsers))
     console.log("ele delete");
     
   }
@@ -87,7 +91,7 @@ const App = () => {
         <button>Submit</button>
       </form> */}
 
-      {/* ---------- Delete --------------- */}
+      {/* ---------- Delete & local Storage -------------- */}
 
       <div className='h-screen bg-black text-white'>
         <form onSubmit={(e)=>
@@ -123,6 +127,8 @@ const App = () => {
           })}
         </div>
       </div>
+
+
 
     </div>
   )
